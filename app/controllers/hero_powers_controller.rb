@@ -7,7 +7,7 @@ class HeroPowersController < ApplicationController
             render json: {error: "hero_power not created"}, status: :unprocessable_entity
         end
     end
-    end
+
 
     private
     def hero_power_params
