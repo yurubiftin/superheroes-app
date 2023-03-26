@@ -16,7 +16,7 @@ class PowersController < ApplicationController
             power.update(power_params)
             render json: power, status: :accepted
         else 
-            render json:{ error: "Power not found"}, status: :not found
+            render json:{ error: "Power not found"}, status: :not_found
         end
     end
 
