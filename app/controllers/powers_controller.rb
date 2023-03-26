@@ -17,6 +17,8 @@ class PowersController < ApplicationController
             render json: power, status: :accepted
         else 
             render json:{ error: "Power not found"}, status: :not found
+        end
+    end
 
     private
     def power_params
